@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+  <link href="style.css/normalize.css" rel="stylesheet">
+  <link href="style.css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico/favicon.ico">
+  <link rel="icon" href="favicon.ico/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.ico/180.png">
+    <link rel="manifest" href="manifest/webmanifest">
   </head>
-  <body>
-<header>
-  <nav>
-    <a><img src="img/logo.png" width="138" height="70" alt="Sedona"></a>
-    <ul>
+  <body class="page-body">
+<header class="main-header">
+  <nav class="main-nav">
+    <a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Sedona"></a>
+    <div class="main-nav-wrapper">  
+      <div class="main-header-bar">
+    <ul class="site-nav">
       <li>
-        <a href="blank.html">Информация вся</a>
+        <a href="blank.html">Информация</a>
       </li>
       <li>
         <a href="blank.html">Фото и видео</a>
@@ -26,108 +31,150 @@
         <a href="blank.html">Гостиницы</a>
       </li>
     </ul>
-  </nav>
+</div>
+</div>
+    </nav>
 </header>
-<main>
+<main class="center">
+    <div class="sectionwel">
+  <section class="promo-first">
   <h1>Sedona</h1>
-  <a><img src="img/welcome.png" width="188" height="45" alt="welcome"></a>
-  <a><img src="img/shape.png" width="256" height="29" alt="to the gorgeous"></a>
-  <a><img src="img/sedona.png" width="457" height="213" alt="Sedona"></a>
-  <section>
+  <div class="section">
+  <a><img src="img/welcome.png" width="188" height="45" alt="Добро пожаловать в Седону"></a><br>
+  <a><img src="img/welcom2.png" width="256" height="29" alt="to the gorgeous"></a><br>
+  <a><img src="img/sedona.png" width="457" height="213" alt="Sedona"></a><br>
+  </section>
+</div>
+     <section class="promo-second">
     <h2>Описание Sedona</h2>
     <h3>
       Седона — небольшой городок в Аризоне,заслуживающий большего!
     </h3>
-     </section>
-  <section>
     <h2>Приемущества</h2>
 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-  <h3>Настоящий
+</section>
+<div class="advantages">
+<section  class="features">
+  <ul class="features-list">
+        <li class="feature-item">
+        <div class="advantageBlue">
+      <h3>Настоящий
     городок</h3>
     <p>-№1-</p>
     <p>Седона — не аттракцион для туристов, там
       течёт своя жизнь</p>
-      <img src="img/image1.jpg" width="793" height="243" alt="Вид города">
-      <h4>Жильё</h4>
+    </div>
+      <img src="img/panorama.jpg" width="793" height="243" alt="Вид города"><br>
+      <ul class="features-list">
+        <li class="feature-item">
+          <img src="img/house.svg" width="75" height="72" alt="house">
+          <h4>Жильё</h4>
       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-      <h4>Еда</h4>
+    </li>
+      <li class="feature-item">
+        <img src="img/foot.svg" width="75" height="70" alt="food">
+        <h4>Еда</h4>
       <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-      <h4>Сувениры</h4>
+    </li>
+      <li class="feature-item">
+        <img src="img/gift.svg" width="64" height="77" alt="gift">
+        <h4>Сувениры</h4>
     <p>Не только китайского, но и местного
       производства!</p>
-  <h3>Там есть Мост дьявола</h3>
-  <img src="img/image.jpg" width="793" height="243" alt="Мост из скал">
-  <p>-№2-</p>
+    </li>
+  </ul>
+</li>
+    <li class="feature-item">
+      <div class="advantageBlue">
+<h3>Там есть Мост дьявола</h3>
+    <p>-№2-</p>
   <p>Да, по нему можно пройти! Если конечно
     вы осмелитесь</p>
-<h3>небольшая
-  площадь</h3>
+  <img src="img/most.jpg" width="793" height="243" alt="Мост из скал"><br>
+  </li>
+</ul>
+</div>
+<div class="content">
+<ul class="features-list">
+      <li class="feature-item">
+        <h3>небольшая площадь</h3>
 <p>-№3-</p>
 <p>все достопримечательности
   находятся очень близко</p>
-  <h3>красивая
+</li>
+  <li class="feature-item">
+    <h3>красивая
     дорога</h3>
     <p>-№4-</p>
   <p>ехать в седону из лас-вегаса совсем
     не скучно!</p>
-    <h3>мало
+  </li>
+    <li class="feature-item"><h3>мало
       туристов</h3>
       <p>-№5-</p>
     <p>большинство едет в гранд каньон
       и толпится там</p>
-  
+       </li>
+    </ul>
+     </div>
 </section>
-<section>
+<section class="search">
     <h2>Заинтересовались?</h2>
   <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-  <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <p>
+  <button class="button button-brown" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="search-item">
       <label for="appointment-date_z">Дата заезда</label>
-      <input id="appointment-date_z" type="text" name="date z" placeholder="01.01.2020"> 
+      <input id="appointment-date_z" type="text" name="date-z" placeholder="01.01.2020"> 
     </p>
-    <p>
+    <p class="search-item">
       <label for="appointment-date_v">Дата выезда</label>
-      <input id="appointment-date_v" type="text" name="date v" placeholder="01.01.2020">
+      <input id="appointment-date_v" type="text" name="date-v" placeholder="01.01.2020">
     </p>
-    <p>
-      <label for="appointment-name">Взрослые</label>
-      <input id="appointment-name" type="text" name="name" placeholder="1">
+    <p class="search-item">
+      <label>Взрослые</label>
+      <input type="number" value="2" min="0" max="100" step="1"/>
     </p>
-    <p>
-      <label for="appointment-name_c">Дети</label>
-      <input id="appointment-name_c" type="tel" name="name c" placeholder="1">
+    <p class="search-item">
+      <label>Дети</label>
+      <input type="number" value="0" min="0" max="100" step="1"/>
     </p>
-    <button type="submit">Найти</button>
+    <button class="button button-blue" type="submit">Найти</button>
   </form>
 </section>
 </main>
-<footer>
-<section>
+<footer  class="main-footer">
+    <div class="container">
+<section class="footer-contacts">
   <h2>Контактная информация</h2>
-  <p>
+  <p class="footer-hashtag">
     #visitSEDONA<br>
-    <a href="tel:+78005558628">+7 800 555-86-28</a><br>
+    <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
   </p>
 </section>
-<section>
+<section class="footer-social">
   <h2>Соц. сети</h2>
   <ul>
-    <li>
-      <a href="#">Твиттер</a>
-    </li>>
-    <li>
-      <a href="#">Фейсбук</a>
-    </li>>
-    <li>
-      <a href="#">Ютуб</a>
-    </li>>
+    <li class="social-item">
+      <a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"></a>
+    </li>
+    <li class="social-item">
+      <a  class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="fb"></a>
+    </li>
+    <li class="social-item">
+      <a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a>
+    </li>
   </ul>
 </section>
-<p>
+<p class="website">
   Website by 
-  <a><img src="img/logo_htmlacademy.png" width="115" height="33" alt="HTML Academy"></a>
+  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logohtmlacademy.png" width="115" height="33" alt="HTML Academy"></a>
    </p>
+</div>
 </footer>
+<section class="modal">
+    <h2>карта</h2>
+    <a><img src="img/map.png" width="1199" height="594" alt="карта"></a>
+  </section>
      </body>
 </html>
