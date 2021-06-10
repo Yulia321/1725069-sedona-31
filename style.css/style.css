@@ -50,47 +50,187 @@ a {
     }
      
     .main-nav {
-      background-color: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  color: var(--basic-black);
+  background-color: transparent;
     }
     
-          .site-nav {
-        list-style: none;
-      }
-           
-      .site-nav a:hover {
+    .main-nav-wrapper {
+      width: 100%;
+      margin-bottom: 60px;
+      background-color: var(--basic-white);
+    }
+
+    .main-header-logo {
+      width: 138px;
+      height: 70px;
+      order: 2;
+    }
+
+    .main-header-bar {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+     
+    .site-nav {
+       width: 1200px;
+  margin: 0;
+  padding: 0;
+      list-style: none;
+    }
+
+    .site-nav a:hover {
         color: var(--basic-blue)
       }
+      
 
-      .site-nav a:focus  {
+    .site-nav a:focus  {
        color: var(--basic-black);
       }
 
-      .site-nav a:active  {
+    .site-nav a:active  {
         color: var(--basic-brown);
        }
+       .promo-first {
+        background-color: var(--basic-extra-black);
+        width: 1200px;
+        height: 509px;
+       }
 
-        .features-list {
-       list-style: none;
+       .promo-first-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+       }
+
+       .promo-second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1200px;
+        height: 216px;
+        line-height: 26px;
+       }
+
+       .promo-second h3 {
+        display: flex;
+        width: 470px;
+        height: 80px;
+        text-align: center;
+        font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+       }
+
+       .features {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0;
+       }
+
+    .features-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+       margin: 0;
+       padding: 0;
+       text-align: center;
+       width: 1200px;
+       height: 330px;
         }
-                  
-      .feature-item h3 {
+
+        .feature-item h4 {
+          font-size: 21px;
+          line-height: 21px;
+          font-weight: 700;
+        }
+
+        .feature-item h3 {
         font-size: 21px;
         line-height: 21px;
+        
         }
 
-         .advantageBlue {
-        background-color: var(--basic-blue); 
+         .blue {
+           background-color: var(--basic-blue); 
         color: var(--basic-white);  
         width: 400px;
-        height: 256px;
+        height: 206px;
         text-align: center;
+        padding-top: 50px;
           }
       
       .content {
        background-color: var(--basic-extra-white);
       }
 
-     .button {
+      .content-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+         margin: 0;
+         padding: 0;
+         width: 1200px;
+         height: 256px;
+      }
+
+         .content-item {
+           text-align: center;
+           width: 300px;
+           margin-right: 40px;
+         }
+
+      .content-item h3 {
+        font-size: 21px;
+          line-height: 21px;
+          font-weight: 700;
+      }
+
+      .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 1200px;
+      }
+
+      .search-info {
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+        .search-item {
+          margin-top: 0;
+          margin-bottom: 29px;
+          width: 568px;
+          
+        }
+
+        .search .button {
+          margin-top: 10px;
+          margin-right: 0;
+        }
+        
+        .search h2 {
+          font-size: 30px;
+          line-height: 24px;
+          font-weight: 700;
+          text-align: center;
+        }
+               
+          .button {
         font: inherit;
         text-align: center;
         color: var(--basic-black);
@@ -138,16 +278,11 @@ a {
   background-color: var(--basic-white);
 }
 
-.main-footer {
-    padding: 60px 0;
-    margin-top: 65px;
-}
-
-.website .button:hover {
+.website a:hover {
     color: var(--basic-blue);
       }
 
-.website .button:focus {
+.website a:focus {
   color: var(--basic-grey);
 }
 
@@ -161,13 +296,40 @@ height: 48px;
   list-style: none;
 }
 
-.parameters {
-  color: var(--basic-white);
-  background-image: url("img/catalogfon.jpg");
+.parameters fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
-.parameters-item {
+.parameters {
+    color: var(--basic-white);
+  background-color: var(--basic-extra-black);
+}
+
+.parameters legend {
+  margin-bottom: 23px;
+  font-size: 16x;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.parameters ul {
+  
+  padding: 0;
+  margin: 0;
   list-style: none;
+  }
+
+.parameters-list {
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sorting {
+  display: flex;
 }
 
 .sorting-item {
@@ -177,6 +339,7 @@ height: 48px;
   }
 
   .sorting-list {
+    display: flex;
     list-style: none;
   }
 
@@ -189,23 +352,7 @@ height: 48px;
     color: var(--basic-black);
   }
 
-  .container-list {
-    list-style: none;
-    }
-
-    .container-list a {
-      color: inherit;
-    }
-
-  .container-list h3 {
-    font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: inherit;
- 
-  }
-
-    .footer-hashtag {
+      .footer-hashtag {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -214,4 +361,9 @@ height: 48px;
     color: inherit;
   }
 
-  
+.container-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
