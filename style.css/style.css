@@ -1,0 +1,217 @@
+:root {
+    --basic-white:  #FFFFFF;
+    --basic-extra-white: #EEEEEE;
+    --basic-white-light: #EBEBEB;
+    --basic-extra-light: #F2F2F2;
+    --basic-blue: #81B3D2;
+    --basic-extra-blue: #669EC0;
+    --basic-blue-light: #5496BD;
+    --basic-brown: #766357;
+    --basic-black: #000000;
+    --basic-extra-black: #333333;
+    --basic-light-grey: #E5E5E5;
+    --basic-grey: BDBBBC;
+    --basic-brown-light: #503E33;
+    --basic-extra-brown: #604E43;
+}
+.page {
+  height: 100%;
+  background-color: var(--basic-extra-light)
+  }
+
+.page-body {
+    width: 1200px;
+height: 2762px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: var(--basic-white);
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+      }
+
+a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+   .main-header {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: transparent;
+    }
+     
+    .main-nav {
+      background-color: var(--basic-white);
+    }
+    
+          .site-nav {
+        list-style: none;
+      }
+           
+      .site-nav a:hover {
+        color: var(--basic-blue)
+      }
+
+      .site-nav a:focus  {
+       color: var(--basic-black);
+      }
+
+      .site-nav a:active  {
+        color: var(--basic-brown);
+       }
+
+        .features-list {
+       list-style: none;
+        }
+                  
+      .feature-item h3 {
+        font-size: 21px;
+        line-height: 21px;
+        }
+
+         .advantageBlue {
+        background-color: var(--basic-blue); 
+        color: var(--basic-white);  
+        width: 400px;
+        height: 256px;
+        text-align: center;
+          }
+      
+      .content {
+       background-color: var(--basic-extra-white);
+      }
+
+     .button {
+        font: inherit;
+        text-align: center;
+        color: var(--basic-black);
+        vertical-align: middle;
+        text-transform: uppercase;
+        background-color: var(--basic-extra-light);
+        border: none;
+      }     
+.button-blue {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+.button-brown {
+    background-color: var(--basic-brown);
+    color: var(--basic-white);
+}
+
+.button-brown:hover {
+  background-color: var(--basic-extra-brown);
+}
+
+.button-brown:focus {
+  background-color: var(--basic-brown-light);
+}
+
+.button-blue:hover, 
+.social-item:hover {
+  background-color: var(--basic-extra-blue);
+}
+
+.button-blue:focus, 
+.social-item:focus {
+  background-color: var(--basic-blue-light);
+}
+
+.search-item input {
+  font: inherit;
+  }
+
+.search-item input:hover {
+  background-color: var(--basic-white-light);
+}
+
+.search-item input:focus {
+  background-color: var(--basic-white);
+}
+
+.main-footer {
+    padding: 60px 0;
+    margin-top: 65px;
+}
+
+.website .button:hover {
+    color: var(--basic-blue);
+      }
+
+.website .button:focus {
+  color: var(--basic-grey);
+}
+
+.social-item {
+background-color: var(--basic-blue);
+width: 46px;
+height: 48px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.parameters {
+  color: var(--basic-white);
+  background-image: url("img/catalogfon.jpg");
+}
+
+.parameters-item {
+  list-style: none;
+}
+
+.sorting-item {
+  font-size: 12px;
+  line-height: 18px;
+  
+  }
+
+  .sorting-list {
+    list-style: none;
+  }
+
+  .sorting-item:hover 
+  .sorting-item:active {
+    color: var(--basic-blue);
+  }
+
+  .sorting-item:focus {
+    color: var(--basic-black);
+  }
+
+  .container-list {
+    list-style: none;
+    }
+
+    .container-list a {
+      color: inherit;
+    }
+
+  .container-list h3 {
+    font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: inherit;
+ 
+  }
+
+    .footer-hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .footer-phone {
+    color: inherit;
+  }
+
+  
