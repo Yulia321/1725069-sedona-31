@@ -319,7 +319,7 @@ img {
 
 .parameters {
   color: var(--basic-white);
-  background-color: var(--basic-extra-black);
+  background-image: url("../img/catalogfon.jpg");
 }
 
 .parameters legend {
