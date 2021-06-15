@@ -31,7 +31,19 @@
   text-transform: uppercase;
   background: var(--basic-white);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 a {
@@ -54,12 +66,16 @@ img {
 .main-nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: transparent;
 }
 
 .main-nav a {
   color: var(--basic-black);
+}
+
+.site-nav a {
+  display: block;
+  padding: 25px 20px;
 }
 
 .main-nav-wrapper {
@@ -74,7 +90,7 @@ img {
   order: 2;
   position: absolute;
   top: 0px;
-  left: 500px;
+  left: 530px;
   margin: 0;
 }
 
@@ -85,16 +101,14 @@ img {
 }
 
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 0;
   list-style: none;
   color: inherit;
-}
-
-.site-nav li {
-  display: inline-block;
-  margin-right: 1em;
+  height: 70px;
 }
 
 .site-nav a:hover {
@@ -112,6 +126,7 @@ img {
   background-image: url("../img/welcomphoto.jpg");
   width: 1200px;
   height: 509px;
+  background-repeat: no-repeat;
 }
 
 .promo-first-list {
@@ -319,7 +334,6 @@ img {
 }
 
 .parameters {
-  display: flex;
   color: var(--basic-white);
   background-image: url("../img/catalogfon.jpg");
 }
@@ -433,4 +447,12 @@ img {
 
 .footer-phone {
   color: inherit;
+}
+
+.search-form {
+  text-align: center;
+  padding: 55px 55px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
