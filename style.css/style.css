@@ -297,13 +297,11 @@ img {
   background-color: var(--basic-brown-light);
 }
 
-.button-blue:hover,
-.social-item:hover {
+.button-blue:hover {
   background-color: var(--basic-extra-blue);
 }
 
-.button-blue:focus,
-.social-item:focus {
+.button-blue:focus {
   background-color: var(--basic-blue-light);
 }
 
@@ -319,11 +317,18 @@ img {
   background-color: var(--basic-white);
 }
 
-.button-website:hover {
+.website {
+  display: flex;
+  justify-content: space-between;
+  width: 204px;
+  justify-self: center;
+}
+
+.website .button:hover {
   color: var(--basic-blue);
 }
 
-.button-website:focus {
+.website .button:focus {
   color: var(--basic-grey);
 }
 
@@ -336,6 +341,10 @@ img {
 .parameters {
   color: var(--basic-white);
   background-image: url("../img/catalogfon.jpg");
+  width: 1200px;
+  height: 217px;
+  padding-top: 27px;
+  background-repeat: no-repeat;
 }
 
 .parameters legend {
@@ -359,16 +368,34 @@ img {
 
 .sorting {
   display: flex;
+  padding-bottom: 31px;
 }
 
 .sorting-item {
   font-size: 12px;
   line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sorting-item a:hover .sorting-item:active {
+  color: var(--basic-blue);
+}
+
+.sorting-item a:focus {
+  color: var(--basic-black);
 }
 
 .sorting-list {
+  padding: 0;
+  margin: 0;
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.sorting-list li {
+  margin-right: 42px;
 }
 
 .sorting-item:hover .sorting-item:active {
@@ -423,19 +450,36 @@ img {
 
 .footer-social {
   justify-self: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .social-button {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
-  background-color: var(--basic-blue-light);
-  justify-content: center;
+  background-color: var(--basic-blue);
+  color: inherit;
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
+}
+
+.social-button:hover {
+  background-color: var(--basic-extra-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-blue-light);
 }
 
 .footer-hashtag {
