@@ -314,12 +314,6 @@ img {
   fill: var(--basic-clear-grey);
 }
 
-.modal {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  font-weight: 700;
-}
-
 .search-form input {
   font-weight: 700;
 }
@@ -540,4 +534,29 @@ img {
   background-color: var(--basic-extra-light);
   line-height: 21px;
   color: var(--basic-dark-grey);
+}
+
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  margin: auto;
+}
+
+.modal-search {
+  top: 120px;
+  bottom: auto;
+  width: 458px;
+  padding: 55px;
+}
+
+.modal-map {
+  width: 1199px;
+  height: 594px;
+  border: 1px solid white;
 }
