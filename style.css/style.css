@@ -162,6 +162,10 @@ img {
   text-align: center;
 }
 
+.features {
+  display: grid;
+}
+
 .features-list {
   list-style: none;
 }
