@@ -19,11 +19,11 @@
 }
 
 .body {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0;
   padding: 0;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -31,6 +31,11 @@
   color: var(--basic-extra-black);
   text-transform: uppercase;
   background-color: var(--basic-extra-light);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .circuit {
@@ -60,12 +65,28 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
 .main-header-logo {
   position: absolute;
+  left: 50%;
   top: 0px;
-  left: 37%;
-  transform: translateX(10%);
-  width: 100%;
+  transform: translateX(-50%);
+  width: 138px;
+}
+
+.main-header-bar li {
+  margin-right: 134px;
+}
+
+.main-header-bar li:nth-child(2) {
+  margin-right: auto;
+}
+
+.main-header-bar li:last-child {
+  margin-right: 0px;
 }
 
 .main-nav {
@@ -82,8 +103,7 @@ img {
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -107,9 +127,11 @@ img {
 }
 
 .promo-first-list {
+  margin: 0px;
   list-style: none;
-  padding-top: 77px;
-  padding-bottom: 81px;
+  padding-left: 0px;
+  padding-top: 55px;
+  padding-bottom: 24px;
 }
 
 .welcom2 {
@@ -119,15 +141,9 @@ img {
 
 .promo-first {
   text-align: center;
-  background-image: url("../img/welcomphoto.jpg");
+  background-image: url("../img/fone.png"), url("../img/welcomphoto.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.romo-first1 {
-  background-image: url("../img/fone.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom center, center;
 }
 
 .promo-second {
@@ -143,9 +159,20 @@ img {
 }
 
 .blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   text-align: center;
+  width: 400px;
+  height: 256px;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
 }
 
 .blue h3 {
@@ -163,7 +190,12 @@ img {
 }
 
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   list-style: none;
+  padding-top: 60px;
+  padding-bottom: 82px;
 }
 
 .features-list h4 {
@@ -182,7 +214,11 @@ img {
 }
 
 .content-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
 .content-item {
@@ -249,8 +285,84 @@ img {
   color: var(--basic-black);
 }
 
-.search h2 {
+.search p {
   line-height: 24px;
+}
+
+.modal-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-form {
+  padding: 55px;
+  font-size: 21px;
+  font-weight: 700;
+  width: 568px;
+  height: 395px;
+}
+
+.search-form .button {
+  font-size: 21px;
+  font-weight: 700;
+  width: 458px;
+  height: 58px;
+}
+
+.search .button {
+  font-size: 21px;
+  font-weight: 700;
+  width: 568px;
+  height: 86px;
+  margin-top: 24px;
+}
+
+.date-picker {
+  width: 346px;
+  height: 38px;
+  font-weight: 700;
+  background-color: var(--basic-extra-light);
+  padding-left: 13px;
+  background-image: url("../img/calendar.svg");
+  background-position: 320px center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.date-picker:hover {
+  background-color: var(--basic-white-light);
+}
+
+.date-picker:focus {
+  background-color: var(--basic-white);
+  border: solid 2px #e5e5e5;
+}
+
+.input-adults {
+  width: 114px;
+  height: 38px;
+  background-color: var(--basic-extra-light);
+  text-align: center;
+}
+
+.input-children {
+  width: 114px;
+  height: 38px;
+  background-color: var(--basic-extra-light);
+  text-align: center;
+}
+
+.range-filter {
+  width: 317px;
+  margin-bottom: 67px;
+}
+
+.filter-item legend {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .main-footer {
@@ -314,14 +426,8 @@ img {
   fill: var(--basic-clear-grey);
 }
 
-.search-form input {
-  font-weight: 700;
-}
-
-.date-picker {
-  background-image: url("../img/calendar.svg");
-  background-position: 120px center;
-  background-repeat: no-repeat;
+.parameters-form-fieldset:last-child {
+  margin-left: auto;
 }
 
 .parameters fieldset {
@@ -331,9 +437,16 @@ img {
 }
 
 .parameters {
+  display: grid;
+  padding-top: 43px;
+  padding-right: 73px;
+  padding-bottom: 36px;
+  padding-left: 72px;
   color: var(--basic-white);
   background-image: url("../img/catalogfon.jpg");
   background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .parameters legend {
@@ -366,19 +479,24 @@ img {
   position: absolute;
   left: -47px;
   top: 0;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 19px;
   border: 2px solid #ffffff;
+  border-radius: 3px;
+}
+
+.parameters-form-input-checkbox:checked + label::before {
+  border-color: transparent;
 }
 
 .parameters-form-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -38px;
+  left: -47px;
+  top: 0;
   width: 27px;
   height: 23px;
-  background-image: url(../img/selected.svg);
+  background-image: url(../img/checkboxon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -388,6 +506,7 @@ img {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .range-controls {
@@ -458,7 +577,17 @@ img {
   color: var(--basic-extra-grey);
 }
 
+.sorting {
+  display: flex;
+  padding-bottom: 31px;
+}
+
 .sorting-list {
+  padding: 0;
+  margin-left: 73px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -536,7 +665,23 @@ img {
   color: var(--basic-dark-grey);
 }
 
-.modal {
+.container-item {
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
+  height: 91px;
+  padding-top: 61px;
+  margin-left: 73px;
+}
+
+.bloc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 258px;
+  height: 97px;
+}
+
+/*.modal {
   color: var(--basic-black);
   background-color: var(--basic-white);
   position: fixed;
@@ -559,4 +704,4 @@ img {
   width: 1199px;
   height: 594px;
   border: 1px solid white;
-}
+}*/
