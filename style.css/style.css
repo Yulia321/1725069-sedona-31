@@ -579,7 +579,6 @@ img {
 
 .sorting {
   display: flex;
-  padding-bottom: 31px;
 }
 
 .sorting-list {
@@ -595,15 +594,22 @@ img {
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-black);
+  padding-left: 73px;
+  padding-right: 46px;
+  margin-top: auto;
 }
 
 .sorting h3 {
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
+  padding-right: 40px;
+
+  margin-top: 15px;
 }
 
 .sortings {
+  padding-right: 33px;
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
@@ -634,6 +640,10 @@ img {
 .up:focus:active path,
 .down:focus:active path {
   fill: var(--basic-blue);
+}
+
+.sort {
+  justify-content: flex-end;
 }
 
 .container-list {
