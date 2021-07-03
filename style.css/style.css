@@ -289,18 +289,18 @@ img {
   line-height: 24px;
 }
 
-.modal-search {
+.search-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.search-form {
-  padding: 55px;
+  align-items: center;
+  justify-content: stretch;
+  padding: 0px;
   font-size: 21px;
   font-weight: 700;
   width: 568px;
   height: 395px;
+  margin: 0px;
+  margin-left: 315px;
 }
 
 .search-form .button {
@@ -308,6 +308,10 @@ img {
   font-weight: 700;
   width: 458px;
   height: 58px;
+}
+
+.search-form label {
+  margin-left: 55px;
 }
 
 .search .button {
@@ -319,15 +323,20 @@ img {
 }
 
 .date-picker {
-  width: 346px;
+  width: 286px;
   height: 38px;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 55px;
   font-weight: 700;
   background-color: var(--basic-extra-light);
-  padding-left: 13px;
-  background-image: url("../img/calendar.svg");
-  background-position: 320px center;
-  background-repeat: no-repeat;
   border: none;
+}
+
+.date-picker::-webkit-calendar-picker-indicator {
+  background-image: url("../img/calendar.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .date-picker:hover {
@@ -340,17 +349,19 @@ img {
 }
 
 .input-adults {
-  width: 114px;
+  width: 38px;
   height: 38px;
   background-color: var(--basic-extra-light);
   text-align: center;
+  border: none;
 }
 
 .input-children {
-  width: 114px;
+  width: 38px;
   height: 38px;
   background-color: var(--basic-extra-light);
   text-align: center;
+  border: none;
 }
 
 .range-filter {
@@ -418,11 +429,15 @@ img {
   background-color: var(--basic-blue-light);
 }
 
-.logo:hover path {
+.social-button:focus svg {
+  opacity: 0.3;
+}
+
+.websitelogo:hover path {
   fill: var(--basic-blue);
 }
 
-.logo:focus path {
+.websitelogo:focus path {
   fill: var(--basic-clear-grey);
 }
 
@@ -453,6 +468,7 @@ img {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  padding-right: 117px;
 }
 
 .parameters-list {
@@ -472,12 +488,13 @@ img {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  padding: 0px;
 }
 
 .parameters-form-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -47px;
+  left: -40px;
   top: 0;
   width: 20px;
   height: 19px;
@@ -492,7 +509,7 @@ img {
 .parameters-form-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  left: -47px;
+  left: -40px;
   top: 0;
   width: 27px;
   height: 23px;
@@ -614,12 +631,12 @@ img {
   line-height: 18px;
   color: var(--basic-black);
   opacity: 30%;
-  text-decoration: underline;
+  border-bottom: 1px dashed #81b3d2;
 }
 
 .sortings:hover {
   color: var(--basic-blue);
-  text-decoration: underline;
+  border-bottom: 1px dashed #81b3d2;
 }
 
 .sortings:focus {
@@ -643,7 +660,11 @@ img {
 }
 
 .sort {
-  justify-content: flex-end;
+  padding-left: 400px;
+}
+
+.byprice {
+  color: var(--basic-blue);
 }
 
 .container-list {
@@ -659,6 +680,7 @@ img {
 
 .container-list a:hover {
   color: var(--basic-blue);
+  border: 1px dashed #81b3d2;
 }
 
 .container-list a:focus {
@@ -675,22 +697,75 @@ img {
   color: var(--basic-dark-grey);
 }
 
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
 .container-item {
   display: flex;
-  justify-content: space-between;
-  width: 1056px;
-  height: 91px;
-  padding-top: 61px;
-  margin-left: 73px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 73px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .bloc {
-  display: flex;
-  flex-wrap: wrap;
-  width: 258px;
-  height: 97px;
+  padding-left: 29px;
+  padding-right: 540px;
 }
 
+.rating {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  width: 110px;
+  height: 91px;
+}
+
+.rating p {
+  margin: 0px;
+}
+
+.ratings {
+  background-color: var(--basic-extra-light);
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  width: 110px;
+}
+
+.website {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.websitelogo {
+  margin-left: 15px;
+}
+
+.controls_wrap {
+  display: flex;
+}
+
+.minusplus {
+  border: none;
+}
+
+.modal-search .button-blue {
+  padding: 0px;
+  margin-left: 55px;
+}
 /*.modal {
   color: var(--basic-black);
   background-color: var(--basic-white);

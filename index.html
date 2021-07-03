@@ -181,7 +181,7 @@
               <input
                 class="date-picker"
                 id="appointment-date_z"
-                type="text"
+                type="date"
                 name="date-z"
                 value="24 апреля 2017"
                 required
@@ -192,14 +192,16 @@
               <input
                 class="date-picker"
                 id="appointment-date_v"
-                type="text"
+                type="date"
                 name="date-v"
                 value="4 июля 2017"
                 required
               />
             </p>
             <p class="search-item">
-              <button class="minus-adult" type="button">
+              <label>Взрослые:</label>
+              <div class="controls_wrap">
+              <button class="minusplus" type="button">
                 <svg
                   width="12"
                   height="3"
@@ -210,23 +212,6 @@
                   <rect width="12" height="3" fill="#A9A9A9" />
                 </svg>
               </button>
-              <button class="plus-adult" type="button">
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                    fill="#A9A9A9"
-                  />
-                </svg>
-              </button>
-              <label>Взрослые:</label>
               <input
                 class="input-adults"
                 type="number"
@@ -235,18 +220,7 @@
                 max="100"
                 step="1"
               />
-              <button class="minus-child" type="button">
-                <svg
-                  width="12"
-                  height="3"
-                  viewBox="0 0 12 3"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="12" height="3" fill="#A9A9A9" />
-                </svg>
-              </button>
-              <button class="plus-child" type="button">
+              <button class="minusplus" type="button">
                 <svg
                   width="11"
                   height="11"
@@ -262,7 +236,22 @@
                   />
                 </svg>
               </button>
+            </div>
+            </p>
+            <p class="search-item">
               <label>Дети:</label>
+              <div class="controls_wrap">
+              <button class="minusplus" type="button">
+                <svg
+                  width="12"
+                  height="3"
+                  viewBox="0 0 12 3"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="12" height="3" fill="#A9A9A9" />
+                </svg>
+              </button>
               <input
                 class="input-children"
                 type="number"
@@ -271,6 +260,24 @@
                 max="100"
                 step="1"
               />
+            
+            <button class="minusplus" type="button">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                  fill="#A9A9A9"
+                />
+              </svg>
+            </button>
+          </div>
             </p>
             <button class="button button-blue" type="submit">
               <span>Найти</span>
@@ -346,7 +353,9 @@
           </section>
           <p class="website">
             Website by
-            <a href="https://htmlacademy.ru/intensive/htmlcss"
+            <a
+              class="websitelogo"
+              href="https://htmlacademy.ru/intensive/htmlcss"
               ><svg
                 class="logo"
                 width="115"
@@ -411,5 +420,6 @@
         <a><img src="img/map.png" width="1199" height="594" alt="карта" /></a>
       </section>
     </div>
+    <script src="login.js"></script>
   </body>
 </html>
