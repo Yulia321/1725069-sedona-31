@@ -344,7 +344,6 @@ img {
 
 .date-picker:focus {
   background-color: var(--basic-white);
-  border: solid 2px #e5e5e5;
 }
 
 .input-adults {
@@ -758,6 +757,9 @@ img {
 }
 
 .minusplus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
 }
 
