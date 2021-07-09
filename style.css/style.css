@@ -16,6 +16,7 @@
   --basic-extra-grey: #6a6a6a;
   --basic-clear-grey: #bdbbbc;
   --basic-dark-grey: #666666;
+  --basic-lightly-grey: #a9a9a9;
 }
 
 .body {
@@ -218,6 +219,7 @@ img {
   list-style: none;
   padding-top: 47px;
   padding-bottom: 54px;
+  margin: 0px;
 }
 
 .content-item {
@@ -261,6 +263,10 @@ img {
   background-color: var(--basic-brown-light);
 }
 
+.button-brown:focus span {
+  opacity: 0.3;
+}
+
 .button-blue {
   background-color: var(--basic-blue);
 }
@@ -271,6 +277,10 @@ img {
 
 .button-blue:focus {
   background-color: var(--basic-blue-light);
+}
+
+.button-blue:focus span {
+  opacity: 0.3;
 }
 
 .search {
@@ -322,7 +332,7 @@ img {
 }
 
 .date-picker {
-  width: 286px;
+  width: 274px;
   height: 38px;
   padding: 0px;
   margin: 0px;
@@ -330,6 +340,7 @@ img {
   font-weight: 700;
   background-color: var(--basic-extra-light);
   border: none;
+  padding-left: 12px;
 }
 
 .date-picker::-webkit-calendar-picker-indicator {
@@ -344,6 +355,7 @@ img {
 
 .date-picker:focus {
   background-color: var(--basic-white);
+  outline: 2px solid #e5e5e5;
 }
 
 .input-adults {
@@ -619,12 +631,11 @@ img {
   line-height: 18px;
   color: var(--basic-black);
   padding-right: 40px;
-
   margin-top: 15px;
 }
 
 .sortings {
-  padding-right: 33px;
+  margin-right: 33px;
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
@@ -640,6 +651,7 @@ img {
 .sortings:focus {
   color: var(--basic-black);
   text-decoration: none;
+  border: none;
 }
 
 .sortings:active {
@@ -663,6 +675,8 @@ img {
 
 .byprice {
   color: var(--basic-blue);
+  text-decoration: none;
+  border: none;
 }
 
 .container-list {
@@ -678,7 +692,6 @@ img {
 
 .container-list a:hover {
   color: var(--basic-blue);
-  border: 1px dashed #81b3d2;
 }
 
 .container-list a:focus {
@@ -705,9 +718,11 @@ img {
 
 .container-item {
   display: flex;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
   padding-left: 73px;
+  padding-right: 73px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -715,31 +730,48 @@ img {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.container-item img {
+  width: 135px;
+  height: 90px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 .bloc {
+  padding-top: 10px;
   padding-left: 29px;
-  padding-right: 540px;
+}
+
+.bloc .button-blue {
+  width: 110px;
+  height: 27px;
+  margin-right: 6px;
+}
+
+.bloc .button-brown {
+  width: 142px;
+  height: 27px;
 }
 
 .rating {
   display: flex;
-
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-left: auto;
   width: 110px;
   height: 91px;
-}
-
-.rating p {
-  margin: 0px;
 }
 
 .ratings {
   background-color: var(--basic-extra-light);
   padding-top: 3px;
-  padding-left: 15px;
-  padding-right: 12px;
+  padding-left: 20px;
   padding-bottom: 3px;
+
   width: 110px;
+
+  margin-top: 25px;
 }
 
 .website {
@@ -761,6 +793,23 @@ img {
   align-items: center;
   justify-content: center;
   border: none;
+  color: var(--basic-lightly-grey);
+}
+
+.minusplus:hover rect {
+  fill: var(--basic-black);
+}
+
+.minusplus:focus rect {
+  fill: var(--basic-blue);
+}
+
+.minusplus:hover path {
+  fill: var(--basic-black);
+}
+
+.minusplus:focus path {
+  fill: var(--basic-blue);
 }
 
 .modal-search .button-blue {
