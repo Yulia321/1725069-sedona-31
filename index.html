@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css/normalize.css" rel="stylesheet" />
     <link href="style.css/style.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico/favicon.ico" />
@@ -168,8 +171,8 @@
             <span>ПОИСК ГОСТИНИЦЫ В седоне</span>
           </button>
         </section>
-
         <section class="modal modal-search">
+          <h2 class="visually-hidden">Выбор гостиниц</h2>
           <form
             class="search-form"
             action="https://echo.htmlacademy.ru"
@@ -182,7 +185,6 @@
                 id="appointment-date_z"
                 type="date"
                 name="date-z"
-                value="24 апреля 2017"
                 required
               />
             </p>
@@ -193,13 +195,11 @@
                 id="appointment-date_v"
                 type="date"
                 name="date-v"
-                value="4 июля 2017"
                 required
               />
             </p>
-            <p class="search-item">
-              <label>Взрослые:</label>
-              <div class="controls_wrap">
+            <label>Взрослые:</label>
+            <div class="controls_wrap">
               <button class="minusplus" type="button">
                 <svg
                   width="12"
@@ -236,10 +236,8 @@
                 </svg>
               </button>
             </div>
-            </p>
-            <p class="search-item">
-              <label>Дети:</label>
-              <div class="controls_wrap">
+            <label>Дети:</label>
+            <div class="controls_wrap">
               <button class="minusplus" type="button">
                 <svg
                   width="12"
@@ -259,25 +257,24 @@
                 max="100"
                 step="1"
               />
-            
-            <button class="minusplus" type="button">
-              <svg
-                width="11"
-                height="11"
-                viewBox="0 0 11 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                  fill="#A9A9A9"
-                />
-              </svg>
-            </button>
-          </div>
-            </p>
+              <button class="minusplus" type="button">
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                    fill="#A9A9A9"
+                  />
+                </svg>
+              </button>
+            </div>
+
             <button class="button button-blue" type="submit">
               <span>Найти</span>
             </button>
