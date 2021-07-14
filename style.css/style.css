@@ -306,10 +306,9 @@ img {
   padding: 0px;
   font-size: 21px;
   font-weight: 700;
-  width: 568px;
-  height: 395px;
+  width: 458px;
+  height: 285px;
   margin: 0px;
-  margin-left: 315px;
 }
 
 .search-form .button {
@@ -328,15 +327,12 @@ img {
   font-weight: 700;
   width: 568px;
   height: 86px;
-  margin-top: 24px;
 }
 
 .date-picker {
-  width: 274px;
+  width: 300px;
   height: 38px;
   padding: 0px;
-  margin: 0px;
-  margin-right: 55px;
   font-weight: 700;
   background-color: var(--basic-extra-light);
   border: none;
@@ -813,11 +809,7 @@ img {
   fill: var(--basic-blue);
 }
 
-.modal-search .button-blue {
-  padding: 0px;
-  margin-left: 55px;
-}
-/*.modal {
+.modal {
   color: var(--basic-black);
   background-color: var(--basic-white);
   position: fixed;
@@ -825,19 +817,22 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  display: none;
   margin: auto;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-search {
-  top: 120px;
   bottom: auto;
-  width: 458px;
+  width: 568px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   padding: 55px;
 }
 
 .modal-map {
   width: 1199px;
   height: 594px;
-  border: 1px solid white;
-}*/
+  position: relative;
+}
