@@ -10,8 +10,8 @@
       rel="stylesheet"
     />
 
-    <link href="style.css/normalize.css" rel="stylesheet" />
-    <link href="style.css/style.css" rel="stylesheet" />
+    <link href="style/normalize.css" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico/favicon.ico" />
     <link rel="icon" href="favicon.ico/152.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon.ico/180.png" />
@@ -21,7 +21,7 @@
     <div class="circuit">
       <header class="main-header">
         <nav class="main-nav">
-          <a class="main-header-logo"
+          <a class="main-header-logo" href="index.html"
             ><img src="img/logo.png" width="138" height="70" alt="Sedona"
           /></a>
           <div class="main-nav-wrapper">
@@ -37,7 +37,7 @@
                   <a class="open" href="blank.html">Карта штата</a>
                 </li>
                 <li>
-                  <a href="blank.html">Гостиницы</a>
+                  <a href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
             </div>
@@ -124,9 +124,22 @@
               <legend>Стоимость в сутки, ₽:</legend>
               <div class="range-filter">
                 <div class="price-controls">
-                  <label class="price">
-                    <input type="text" name="price" value="от 0 до 3000" />
-                  </label>
+                  <div class="price">
+                    <label for="price-from">от</label>
+                    <input
+                      type="number"
+                      name="price"
+                      value="0"
+                      id="price-from"
+                    />
+                    <label for="price-to">до</label>
+                    <input
+                      type="number"
+                      name="price"
+                      value="3000"
+                      id="price-to"
+                    />
+                  </div>
                 </div>
                 <div class="range-controls">
                   <div class="scale">
@@ -201,15 +214,15 @@
                 alt="Amara Resort & Spa"
               />
               <div class="bloc">
-                <p><a href="#">Amara Resort & Spa</a></p>
+                <p><a class="name" href="#">Amara Resort & Spa</a></p>
                 <p>Гостиница От 4000 ₽</p>
                 <p>
-                  <button class="button button-blue" type="button">
+                  <a class="bluee" href="blank.html">
                     <span>Подробнее</span>
-                  </button>
-                  <button class="button button-brown" type="submit">
+                  </a>
+                  <a class="brown" href="blank.html">
                     <span>Забронировать</span>
-                  </button>
+                  </a>
                 </p>
               </div>
               <div class="rating">
@@ -274,15 +287,15 @@
                 alt="Desert Quail Inn"
               />
               <div class="bloc">
-                <p><a href="#">Desert Quail Inn</a></p>
+                <p><a class="name" href="#">Desert Quail Inn</a></p>
                 <p>Мотель От 3000 ₽</p>
                 <p>
-                  <button class="button button-blue" type="button">
+                  <a class="bluee" href="blank.html">
                     <span>Подробнее</span>
-                  </button>
-                  <button class="button button-brown" type="submit">
+                  </a>
+                  <a class="brown" href="blank.html">
                     <span>Забронировать</span>
-                  </button>
+                  </a>
                 </p>
               </div>
               <div class="rating">
@@ -336,15 +349,15 @@
                 alt="Villas at Poco Diablo"
               />
               <div class="bloc">
-                <p><a href="#">Villas at Poco Diablo</a></p>
+                <p><a class="name" href="#">Villas at Poco Diablo</a></p>
                 <p>Апартаменты От 2000 ₽</p>
                 <p>
-                  <button class="button button-blue" type="button">
+                  <a class="bluee" href="blank.html">
                     <span>Подробнее</span>
-                  </button>
-                  <button class="button button-brown" type="submit">
+                  </a>
+                  <a class="brown" href="blank.html">
                     <span>Забронировать</span>
-                  </button>
+                  </a>
                 </p>
               </div>
               <div class="rating">
@@ -388,7 +401,7 @@
               #visitSEDONA<br />
               <a class="footer-phone" href="tel:+78005558628"
                 >+7 800 555-86-28</a
-              ><br />
+              >
             </p>
           </section>
           <section class="footer-social">

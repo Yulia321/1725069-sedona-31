@@ -5,15 +5,10 @@ const loginForm = loginPopup.querySelector(".search-form");
 
 loginLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    loginPopup.classList.add("modal-show");
+    loginPopup.classList.toggle("modal-show");
   });
 
-  loginClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    loginPopup.classList.remove("modal-show");
-  });
-
-  loginForm.addEventListener("submit", function (evt) {
+    loginForm.addEventListener("submit", function (evt) {
     evt.preventDefault();
 });
 
