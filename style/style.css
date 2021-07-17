@@ -34,7 +34,6 @@
   color: var(--basic-extra-black);
   text-transform: uppercase;
   background-color: var(--basic-extra-light);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -175,7 +174,6 @@ img {
   background-color: var(--basic-blue);
   text-align: center;
   width: 400px;
-  margin: 0px;
 }
 
 .photo {
