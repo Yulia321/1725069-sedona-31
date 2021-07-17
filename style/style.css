@@ -17,6 +17,8 @@
   --basic-clear-grey: #bdbbbc;
   --basic-dark-grey: #666666;
   --basic-lightly-grey: #a9a9a9;
+  --basic-grey-grey: #ababab;
+  --basic-grin: #2de707;
 }
 
 .body {
@@ -104,10 +106,15 @@ img {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site-nav li {
+  min-width: 98px;
 }
 
 .site-nav a {
@@ -140,9 +147,14 @@ img {
   background-image: url("../img/fone.png"), url("../img/welcomphoto.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, center;
+  background-color: var(--basic-blue);
 }
 
 .promo-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding-top: 43px;
   padding-bottom: 51px;
@@ -163,7 +175,7 @@ img {
   background-color: var(--basic-blue);
   text-align: center;
   width: 400px;
-  height: 256px;
+  margin: 0px;
 }
 
 .photo {
@@ -315,6 +327,16 @@ img {
 
 .search-item {
   display: flex;
+  position: relative;
+}
+
+.search-item-calendar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 21px;
+  height: 23px;
 }
 
 .search-item label {
@@ -334,7 +356,6 @@ img {
 .date-picker {
   width: 340px;
   height: 38px;
-  padding: 0px;
   font-weight: 700;
   background-color: var(--basic-extra-light);
   border: none;
@@ -345,6 +366,7 @@ img {
   background-image: url("../img/calendar.svg");
   background-position: center;
   background-repeat: no-repeat;
+  display: none;
 }
 
 .date-picker:hover {
@@ -353,7 +375,7 @@ img {
 
 .date-picker:focus {
   background-color: var(--basic-white);
-  outline: 2px solid #e5e5e5;
+  outline: 2px solid var(--basic-light-grey);
 }
 
 .input-adults {
@@ -479,6 +501,7 @@ img {
   width: 100%;
   box-sizing: border-box;
   background-size: cover;
+  background-color: var(--basic-blue);
 }
 
 .parameters legend {
@@ -515,8 +538,12 @@ img {
   top: 0;
   width: 20px;
   height: 19px;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 3px;
+}
+
+.parameters-form-input-checkbox + label::before:disabled {
+  border-color: var(--basic-extra-grey);
 }
 
 .parameters-form-input-checkbox:checked + label::before {
@@ -553,12 +580,12 @@ img {
 .range-controls .bar {
   width: 85%;
   height: 2px;
-  background: #2de707;
+  background: var(--basic-grin);
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #ffffff;
+  background: var(--basic-white);
   opacity: 30%;
 }
 
@@ -569,10 +596,10 @@ img {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-grey-grey);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #ababab;
+  box-shadow: 0 2px 1px 0 var(--basic-grey-grey);
 }
 
 .range-controls .toggle-min {
@@ -586,22 +613,22 @@ img {
 .price-controls input {
   padding: 10px;
   margin-left: 0px;
-  color: #ffffff;
+  color: var(--basic-white);
   border-radius: 5px;
   background: none;
-  border: solid 2px #ffffff;
-  width: 317px;
+  border: solid 2px var(--basic-white);
+
+  line-height: 21px;
 }
 
 .button-filtre {
-  padding: 10px;
   margin-left: 100px;
   margin-top: 33px;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
   border-radius: 2px;
   background: none;
-  border: solid 2px #ffffff;
+  border: solid 2px var(--basic-white);
   width: 137px;
   height: 36px;
 }
@@ -646,12 +673,12 @@ img {
   line-height: 18px;
   color: var(--basic-black);
   opacity: 30%;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dashed var(--basic-blue);
 }
 
 .sortings:hover {
   color: var(--basic-blue);
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dashed var(--basic-blue);
 }
 
 .sortings:focus {
@@ -683,13 +710,14 @@ img {
 
 .price input {
   border: none;
+  width: 50px;
 }
 
 .price {
   display: flex;
   align-items: center;
-  justify-content: end;
-  border: 2px solid #ffffff;
+  justify-content: center;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   line-height: 21px;
 }
@@ -789,11 +817,11 @@ img {
   padding: 0px;
   padding-left: 73px;
   padding-right: 73px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--basic-light-grey);
 }
 
 .container-item:last-child {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--basic-light-grey);
 }
 
 .container-item img {
