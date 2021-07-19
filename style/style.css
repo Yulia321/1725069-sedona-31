@@ -79,18 +79,6 @@ img {
   width: 138px;
 }
 
-.main-nav li {
-  margin-right: 134px;
-}
-
-.main-nav li:nth-child(2) {
-  margin-right: auto;
-}
-
-.main-nav li:last-child {
-  margin-right: 0px;
-}
-
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -104,20 +92,27 @@ img {
 }
 
 .site-nav {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
 }
 
 .site-nav li {
-  min-width: 98px;
+  width: 100%;
+}
+
+.site-nav li:nth-child(1n + 3) {
+  text-align: right;
 }
 
 .site-nav a {
   color: var(--basic-black);
+  display: block;
+  width: 100%;
 }
 
 .site-nav a:hover {
@@ -137,8 +132,8 @@ img {
   margin: 0px;
   list-style: none;
   padding-left: 0px;
-  padding-top: 55px;
-  padding-bottom: 24px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .promo-first {
@@ -155,14 +150,16 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 43px;
-  padding-bottom: 51px;
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 
 .promo-second h3 {
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-bottom: 30px;
+  max-width: 500px;
 }
 
 .blue {
@@ -185,6 +182,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .blue p {
@@ -200,7 +198,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   padding-top: 60px;
-  padding-bottom: 82px;
+  padding-bottom: 65px;
+  margin: 0px;
 }
 
 .features-list h4 {
@@ -208,6 +207,7 @@ img {
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-bottom: 20px;
 }
 
 .features-list p {
@@ -218,8 +218,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
-  padding-top: 47px;
-  padding-bottom: 54px;
+  padding-top: 32px;
+  padding-bottom: 35px;
   margin: 0px;
 }
 
@@ -232,10 +232,12 @@ img {
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-bottom: 27px;
 }
 
 .content-item p {
   line-height: 21px;
+  margin-bottom: 22px;
 }
 
 .button {
@@ -286,6 +288,7 @@ img {
 
 .search {
   text-align: center;
+  padding: 55px 0px 0px;
 }
 
 .search h2 {
@@ -293,10 +296,12 @@ img {
   line-height: 24px;
   font-weight: 700;
   color: var(--basic-black);
+  margin: 0px 0px 35px;
 }
 
 .search p {
   line-height: 24px;
+  margin-bottom: 42px;
 }
 
 .search-form {
@@ -348,8 +353,7 @@ img {
   font-size: 21px;
   font-weight: 700;
   width: 568px;
-  height: 58px;
-  margin-top: 25px;
+  height: 86px;
 }
 
 .date-picker {
@@ -491,9 +495,9 @@ img {
 
 .parameters {
   display: grid;
-  padding-top: 43px;
+  padding-top: 26px;
   padding-right: 73px;
-  padding-bottom: 36px;
+  padding-bottom: 8px;
   padding-left: 72px;
   color: var(--basic-white);
   background-image: url("../img/catalogfon.jpg");
@@ -509,6 +513,7 @@ img {
   line-height: 21px;
   font-weight: 700;
   padding-right: 117px;
+  margin-bottom: 10px;
 }
 
 .parameters-list {
@@ -611,7 +616,7 @@ img {
 }
 
 .price-controls input {
-  padding: 10px;
+  padding: 5px 10px;
   margin-left: 0px;
   color: var(--basic-white);
   border-radius: 5px;
@@ -640,6 +645,8 @@ img {
 
 .sorting {
   display: flex;
+  padding-top: 18px;
+  padding-bottom: 15px;
 }
 
 .sorting-list {
@@ -666,6 +673,7 @@ img {
   color: var(--basic-black);
   padding-right: 40px;
   margin-top: 15px;
+  font-weight: 400;
 }
 
 .sortings {
@@ -739,11 +747,11 @@ img {
   background-color: var(--basic-extra-brown);
 }
 
-.brown:focus {
+.brown:active {
   background-color: var(--basic-brown-light);
 }
 
-.brown:focus span {
+.brown:active span {
   opacity: 0.3;
 }
 
@@ -763,11 +771,11 @@ img {
   background-color: var(--basic-extra-blue);
 }
 
-.bluee:focus {
+.bluee:active {
   background-color: var(--basic-blue-light);
 }
 
-.bluee:focus span {
+.bluee:active span {
   opacity: 0.3;
 }
 
@@ -798,6 +806,8 @@ img {
 
 .container-list p {
   line-height: 21px;
+  margin-bottom: 12px;
+  margin-top: 11px;
 }
 
 .button-star {
@@ -835,16 +845,19 @@ img {
 .bloc {
   padding-top: 10px;
   padding-left: 29px;
+  max-width: 500px;
 }
 
 .rating {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 10px;
+  margin-top: 16px;
   margin-left: auto;
+  padding-bottom: 20px;
   width: 110px;
-  height: 91px;
+  color: var(--basic-dark-grey);
 }
 
 .ratings {
@@ -942,6 +955,10 @@ input[type="number"] {
 
 .modal-map {
   width: 1199px;
-  height: 594px;
+  height: 474px;
   position: relative;
+}
+
+.modal-map iframe {
+  height: 474px;
 }
