@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Юлия Скачкова](https://up.htmlacademy.ru/htmlcss/31/user/1725069).
-* Наставник: [Влад Повелица](https://htmlacademy.ru/profile/id788487).
+- Студент: [Юлия Скачкова](https://up.htmlacademy.ru/htmlcss/31/user/1725069).
+- Наставник: [Павел Белобородов](https://htmlacademy.ru/profile/id466909).
 
 ---
 
